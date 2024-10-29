@@ -18,4 +18,9 @@ public class GreeterTests {
     public void doesNotGreetIncorrectly() {
         assertThat(Greeter.greet(), not(equalTo("wrong!")));
     }
+
+    @Test
+    public void doesNotGreetRude() {
+        assertThat(Greeter.greet(), not(equalTo("go away!")));
+    }
 }
